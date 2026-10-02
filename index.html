@@ -171,12 +171,12 @@
 
   .arena{
     position:relative;
-    height:180px;
+    height:210px;
     margin:0 0 18px;
   }
-  .arena button{ position:absolute; top:70px; }
-  #chaseYes{ left:calc(50% - 90px); }
-  #chaseNo{ left:calc(50% + 10px); }
+  .arena button{ position:absolute; }
+  #chaseYes{ top:30px; left:50%; transform:translateX(-50%); white-space:nowrap; }
+  #chaseNo{ top:130px; left:calc(50% - 35px); }
 
   .tease{
     min-height:22px;
@@ -301,9 +301,9 @@
 
   <section class="stage" id="stage-chase" hidden>
     <h2>Ну гаразд...</h2>
-    <p class="lead">Тоді спробуй просто натиснути "так".</p>
+    <p class="lead">Якщо не передумала — тоді натисни кнопку "ні".</p>
     <div class="arena" id="arena">
-      <button class="btn-primary" id="chaseYes">Так</button>
+      <button class="btn-primary" id="chaseYes">Лан, я йду гуляти</button>
       <button class="btn-ghost" id="chaseNo">Ні</button>
     </div>
     <p class="tease" id="teaseText">&nbsp;</p>
